@@ -1,5 +1,10 @@
 # vue-component-package-demo
 
+## Use in browser
+```
+<script src="https://unpkg.com/vue-component-package-demo/dist/vue-component-package-demo.umd.js"></script>
+```
+
 ## Project create
 ```
 vue create .
@@ -22,7 +27,7 @@ package.json
     "src/*",
     "*.json"
   ],
-  "main": "dist/vue-component-demo.common.js",
+  "main": "dist/vue-component-package-demo.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build-package": "vue-cli-service build --target lib --inline-vue --name vue-component-demo ./src/index.js",
