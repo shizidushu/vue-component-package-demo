@@ -37,24 +37,28 @@
       </v-btn>
     </v-app-bar>
 
-    <v-content>
-      <HelloWorld/>
-    </v-content>
+    <v-main>
+
+      <v-card>
+        <button-counter></button-counter>
+      </v-card>
+      
+    </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import ButtonCounter from './components/ButtonCounter'
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    ButtonCounter
   },
 
   data: () => ({
-    //
+    searchText: ""
   }),
 };
 </script>

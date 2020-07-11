@@ -1,5 +1,38 @@
 # vue-component-package-demo
 
+## Project create
+```
+vue create .
+vue add vuetify
+```
+
+vue.config.js： `css: { extract: false } // 强制CSS内联`
+
+'src/index.js'
+
+package.json
+```
+{
+  "name": "vue-component-package-demo",
+  "version": "0.1.0",
+  "description": "vue component package demo",
+  // The files hosted by NPM
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json"
+  ],
+  "main": "dist/vue-component-demo.common.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build-package": "vue-cli-service build --target lib --inline-vue --name vue-component-demo ./src/index.js",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+}
+```
+
+
 ## Project setup
 ```
 npm install
@@ -13,6 +46,11 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
+```
+
+### Build package
+```
+npm run build-package
 ```
 
 ### Lints and fixes files
