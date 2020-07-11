@@ -32,6 +32,10 @@ package.json
 }
 ```
 
+## Publish to NPM
+
+npm login
+npm publish
 
 ## Project setup
 ```
